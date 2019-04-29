@@ -28,6 +28,11 @@
 <h2 id="eliminando-bloqueos-de-renderizado">Eliminando bloqueos de renderizado</h2>
 <p>Google recomienda poner nuestras hojas de estilo debajo del <strong>above the fold</strong>, la expresión define la parte del sitio que los usuarios ven primero sin necesidad de desplazarse con el ratón.</p>
 <p><img src="file:////home/hnavarrete/httpdocs/platzi/Carrera - Arquitectura Frontend/12_wpo_optimizacion_carga_sitios_web/images/aboveTheFold.png" alt="aboveTheFold"></p>
+<h2 id="comprimiendo-nuestro-archivo-css">Comprimiendo nuestro archivo CSS</h2>
+<p>Esto se puede hacer de muchas maneras, ya sea utilizando preprocesadores como Sass, Less o Stylus, o también puedes utilizar Webpack, o bien mediante sitios en internet como <a href="https://csscompressor.com/">https://csscompressor.com/</a></p>
+<p>Una vez minificado deberemos crear un nuevo archivo CSS pero que termine en <code>min.css</code> para diferenciar de la version sin minificar. Una vez hecho esto debemos apuntar nuestro HTML a este archivo minificado.</p>
+<pre><code class="language-html"><div><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/style.min.css"</span>&gt;</span>
+</div></code></pre>
 
     </body>
     </html>
