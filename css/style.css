@@ -5,16 +5,22 @@
       url('../fonts/icomoon.ttf?42gk57') format('truetype'),
       url('../fonts/icomoon.woff?42gk57') format('woff'),
       url('../fonts/icomoon.svg?42gk57#icomoon') format('svg');*/
-    
-    
+
+
     font-display: fallback;
-    src: local('icomoon'), url(../fonts/icomoon.woff?42gk57) format('woof');
+    src: local('icomoon'),
+        url('../fonts/icomoon.eot?42gk57'),
+        url('../fonts/icomoon.eot?42gk57#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?42gk57') format('truetype'),
+        url('../fonts/icomoon.woff?42gk57') format('woff'),
+        url('../fonts/icomoon.svg?42gk57#icomoon') format('svg');
 
     font-weight: normal;
     font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change ../fonts */
     font-family: 'icomoon' !important;
     /*speak: none;*/
@@ -23,37 +29,41 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-menu:before {
+}
+
+.icon-menu:before {
     content: "\e904";
-  }
-  .icon-github:before {
+}
+
+.icon-github:before {
     content: "\e900";
-  }
-  .icon-instagram:before {
+}
+
+.icon-instagram:before {
     content: "\e901";
     color: #e4405f;
-  }
-  .icon-facebook:before {
+}
+
+.icon-facebook:before {
     content: "\e902";
     color: #3b5998;
-  }
-  .icon-twitter:before {
+}
+
+.icon-twitter:before {
     content: "\e903";
     color: #1da1f2;
-  }
+}
 
 
 
 
 
 body {
-    font-family: 'Source Sans Pro', system-ui;
+    /*font-family: 'Source Sans Pro', system-ui;*/
     margin: 0;
 }
 
@@ -63,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Fjalla One', system-ui;
+    /*font-family: 'Fjalla One', system-ui;*/
     font-weight: normal;
     /* font-style: italic; */
 }
@@ -86,7 +96,7 @@ h1 strong {
 h2 {
     color: #026fff;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', system-ui;
+    /*font-family: 'Source Sans Pro', system-ui;*/
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
@@ -157,7 +167,7 @@ h2 {
 }
 
 .project strong {
-    font-family: 'Fjalla One', system-ui;
+    /*font-family: 'Fjalla One', system-ui;*/
 
 }
 
@@ -243,7 +253,7 @@ figure {
 }
 
 .event-list-title {
-    margin-left: 15px;    
+    margin-left: 15px;
 }
 
 
@@ -427,7 +437,7 @@ video {
     position: fixed;
     z-index: 4;
     left: 15px;
-    top:15px;
+    top: 15px;
 
 }
 
@@ -475,10 +485,10 @@ video {
 @media screen and (max-width: 767px) {
 
     .event-list {
-        margin:0 0.8em;
+        margin: 0 0.8em;
     }
 
-    h2{
+    h2 {
         font-size: 1em;
         margin: 0 0 1em;
     }
@@ -563,7 +573,7 @@ video {
         flex-shrink: initial;
     }
 
-    
+
 
     .event img {
         width: 100%;
@@ -581,19 +591,19 @@ video {
     .menu {
         position: fixed;
         background: rgba(0, 0, 0, 0.9);
-        z-index: 3;        
-        top: 0;        
+        z-index: 3;
+        top: 0;
         left: -100vw;
         bottom: 0;
-        width: 100vw;   
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: .3s;
     }
 
-    .menu.is-active{
-        left:0;
+    .menu.is-active {
+        left: 0;
     }
 
 
@@ -601,7 +611,7 @@ video {
 }
 
 @media screen and (max-width: 480px) {
-    
+
 
 
     .project-details {
