@@ -8,4 +8,6 @@ Google dentro de sus herramientas para desarrolladores tiene una página que nos
 
 ## Eliminando bloqueos de renderizado
 
-Poner debajo del **above the fold**
+Google recomienda poner nuestras hojas de estilo debajo del **above the fold**, la expresión define la parte del sitio que los usuarios ven primero sin necesidad de desplazarse con el ratón.
+
+![aboveTheFold](images/aboveTheFold.png)
