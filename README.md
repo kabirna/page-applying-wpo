@@ -36,3 +36,22 @@ Los pasos son los siguientes:
 
 ## Optimizando las imágenes
 
+Para tener nuestro sitio totalmente optimizado solamente nos queda optimizar nuestras imágenes.
+
+Algunas veces estaremos renderizando una imagen con un tamaño mucho mayor del que tenemos en el sitio, por ello es buena práctica redimensionar nuestras imágenes al tamaño que mostramos en nuestro sitio, usaremos el servicio de <https://resizeimage.net/>.
+
+No basta solamente con redimensionar nuestras imágenes, también debemos comprimirlas y de preferencia tenerlas en formato PNG para evitar perdidas en la calidad de imagen, para esto usaremos el servicio <https://tinypng.com/>.
+
+Actualmente se recomienda el uso de formatos de compresión avanzados como **JPEG 2000** o **WebP**. Vale la pena mencionar que actualmente **Safari** no soporta WebP por lo que tendriamos que usar un fallback (imagen en caso de que falle la primera) en el caso de los navegadores que no soporten dicho formato.
+
+Podriamos poner nuestra imagen por defecto en el atributo **data** de una etiqueta `<object>` y dentro de ella una etiqueta `<img>` que sera nuestro fallback en caso de que la primera falle:
+
+```html
+<object data="http://stackoverflow.com/default-image.png" type="image/png">
+    <img src="https://appharbor.com/assets/images/fallback-image.png" alt="example">
+</object>
+```
+
+Podemos encontrar recursos para optimizar en la pagina de desarrolladores de Google 
+
+<https://developers.google.com/web/fundamentals/>
