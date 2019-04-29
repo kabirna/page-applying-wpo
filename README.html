@@ -33,6 +33,15 @@
 <p>Una vez minificado deberemos crear un nuevo archivo CSS pero que termine en <code>min.css</code> para diferenciar de la version sin minificar. Una vez hecho esto debemos apuntar nuestro HTML a este archivo minificado.</p>
 <pre><code class="language-html"><div><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/style.min.css"</span>&gt;</span>
 </div></code></pre>
+<h2 id="critical-css-o-critical-path-css">Critical CSS o Critical Path CSS</h2>
+<p>Para eliminar el bloqueo de la visualización solamente nos queda hacer Critical Path CSS.</p>
+<p>Al momento de cargar un sitio este se encontrará sin estilos hasta el momento de cargar el CSS por completo generando que la visualización del sitio sea mala, para solucionar esto solamente debemos escribir el CSS necesario para el Above the fold dentro de nuestro HTML. Haremos uso del sitio <a href="https://jonassebastianohlsson.com/criticalpathcssgenerator/">https://jonassebastianohlsson.com/criticalpathcssgenerator/</a>.</p>
+<p>Los pasos son los siguientes:
+1. Debemos colocar la URL de nuestro sitio a optimizar
+2. Colocar el codigo CSS completo
+3. Dar click en el boton <strong>Create Critical Path CSS</strong>
+4. El codigo resultante debemos colocarlo en nuestro index.html dentro de etiquetas <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>.</p>
+<h2 id="optimizando-las-im%C3%A1genes">Optimizando las imágenes</h2>
 
     </body>
     </html>
